@@ -14,12 +14,14 @@ const IndexPage = () => (
           <h2>{category.name}</h2>
           {category.commands.map((command, i) => (
             <Fragment key={i}>
-              <div className="keys">
-                {command.keys.map((key, i) => (
-                  <span className="key" key={i}>
-                    {key}
-                  </span>
-                ))}
+              <div className="key-wrapper">
+                <div className="keys">
+                  {command.keys.map((key, i) => (
+                    <span className="key" key={i}>
+                      {key}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="description">{command.desc}</div>
             </Fragment>

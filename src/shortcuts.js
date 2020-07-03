@@ -2,6 +2,7 @@ const CTRL = "Ctrl"
 const CMD = "⌘"
 const TAB = "⇥"
 const SHIFT = "⇧"
+const SPACE = "\xa0\xa0\xa0\xa0\xa0\xa0"
 
 export default [
   {
@@ -16,7 +17,7 @@ export default [
   {
     name: "MacOS",
     commands: [
-      { keys: [CMD, CTRL, "SPACE"], desc: "Emoji keyboard" },
+      { keys: [CMD, CTRL, SPACE], desc: "Emoji keyboard" },
       { keys: [CMD, TAB], desc: "Switch programs" },
       { keys: [CTRL, "`"], desc: "Switch instance of current program" },
     ],

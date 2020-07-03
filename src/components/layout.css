@@ -21,6 +21,10 @@ h2 {
   color: #555;
 }
 
+.keys {
+  display: flex;
+}
+
 .key {
   background-color: #555;
   border: 1px solid black;
